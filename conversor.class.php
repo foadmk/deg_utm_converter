@@ -1,3 +1,5 @@
+<?php
+
 class conversor {
 
     function __construct()
@@ -77,7 +79,9 @@ class conversor {
     }
 }
 
-//teste
+//Testing
 $conv = new conversor();
 print_r($deg = $conv->utm_to_deg(155244.82, 7154038.54));
 print_r($utm = $conv->deg_to_utm($deg['lat'], $deg['long']));
+
+?>
